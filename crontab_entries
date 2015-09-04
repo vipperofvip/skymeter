@@ -1,0 +1,3 @@
+0 */6 * * * /home/pi/skymeter/usage_display_prep.sh
+10 */6 * * * /home/pi/skymeter/usage_display.sh
+1 */6 * * * /home/pi/skymeter/usage_updater.sh
