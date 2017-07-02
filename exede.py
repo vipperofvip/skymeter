@@ -50,7 +50,8 @@ def get_excede_html():
 	ghost.set_field_value(".form-control.input-lg.required[name=IDToken1]",username)
 	ghost.set_field_value(".form-control.input-lg.required[name=IDToken2]",password)
 	print "Clicking form button"
-	ghost.click('.btn.btn-info.btn-lg.pull-right.col-lg-4[name="Login.Submit"]')
+	#ghost.click('.btn.btn-info.btn-lg.pull-right.col-lg-4[name="Login.Submit"]')
+	ghost.click('.btn.btn-info.btn-lg.btn-block[name="Login.Submit"]')
 	print "Waiting for page to load"
 	ghost.wait_for_page_loaded()
 
@@ -131,9 +132,9 @@ def usage():
 	
 	exede_html,usage['result'] = get_excede_html()
 	#for testing against html files on disk...	
-	#with open('bad_login.html','r+') as html:
+	#with open('exede_login_now.html','r+') as html:
 	#	exede_html = html.read()
-		#usage['result'] = 'OK'
+	#	usage['result'] = 'OK'
 
 	usage['updatetime'] = datetime.now().strftime("%b %d %I:%M %p")
 	
